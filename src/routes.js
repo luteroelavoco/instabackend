@@ -8,9 +8,9 @@ const routes = new express.Router();
 const upload = multer(uploadConfig);
 
 routes.get('/posts',PostController.index)
-routes.post('/posts',upload.single('image'),PostController.store)
-routes.delete('/posts/:id',PostController.remove)
+//routes.post('/posts',upload.single('image'),PostController.store)
+//routes.delete('/posts/:id',PostController.remove)
 routes.post('/posts/:id/like',LikeController.store)
-routes.delete('/deleteAll',PostController.removeAll);
+//routes.delete('/deleteAll',PostController.removeAll);
 
 module.exports = routes;
