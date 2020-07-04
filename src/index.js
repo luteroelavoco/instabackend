@@ -25,4 +25,4 @@ app.use((req, res, next) => {
 app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads', 'resized')));
 app.use(require('./routes'));
 var porta = process.env.PORT || 8080;
-server.listen(porta);
+server.listen(3333);
